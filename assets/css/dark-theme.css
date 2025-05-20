@@ -3,8 +3,8 @@
   --bg-secondary: #F5F5F0; /* Off-white for secondary backgrounds */
   --text-primary: #121212; /* Jet Black for main text */
   --text-secondary: #2F2F2F; /* Charcoal Gray for secondary text */
-  --accent-color: #D4AF37; /* Primary Gold accent color */
-  --accent-hover: #BFA030; /* Slightly darker gold for hover states */
+  --accent-color: #1F3A93; /* Dark Blue primary accent color (was Gold #D4AF37) */
+  --accent-hover: #14295C; /* Darker blue for hover states (was Gold #BFA030) */
   --border-color: #D7CCC8; /* Soft Taupe for borders */
   --card-bg: #FFFFFF; /* Pure white for cards */
   --header-height: 70px;
@@ -12,6 +12,7 @@
   --shadow-sm: 0 1px 3px rgba(0,0,0,0.1);
   --shadow-md: 0 4px 6px -1px rgba(0,0,0,0.1);
   --shadow-lg: 0 10px 15px -3px rgba(0,0,0,0.1);
+  --secondary-accent: #FF8C42; /* Orange secondary accent color */
 }
 
 /* Base Styles */
@@ -320,7 +321,7 @@ footer {
 
 /* Hero Section */
 .hero {
-  background: linear-gradient(135deg, #FAF9F6 0%, #F0EAD6 100%);
+  background: linear-gradient(135deg, #FAF9F6 0%, #ECF0F9 100%);
   padding: 6rem 0;
   text-align: center;
   position: relative;
@@ -345,7 +346,7 @@ footer {
 .hero h1 {
   font-size: 3rem;
   margin-bottom: 1rem;
-  background: linear-gradient(45deg, var(--accent-color), #60a5fa);
+  background: linear-gradient(45deg, var(--accent-color), var(--secondary-accent));
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -460,7 +461,7 @@ footer {
   font-size: 1.5rem;
   font-weight: 700;
   color: var(--text-primary);
-  background: linear-gradient(45deg, var(--accent-color), #60a5fa);
+  background: linear-gradient(45deg, var(--accent-color), var(--secondary-accent));
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -469,7 +470,7 @@ footer {
 /* Enhanced Hero Section */
 .gradient-text {
   font-size: 3.5rem;
-  background: linear-gradient(45deg, var(--accent-color), #BFA030);
+  background: linear-gradient(45deg, var(--accent-color), var(--secondary-accent));
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -856,4 +857,25 @@ img, pre, code {
 .related-article-content h3 {
   font-size: 1.1rem;
   margin: 0 0 0.5rem 0;
+}
+
+/* Update buttons and interactive elements */
+.contact-button {
+  background: var(--accent-color);
+}
+
+.contact-button:hover {
+  background: var(--accent-hover);
+}
+
+.filter-tag.active {
+  background: var(--accent-color);
+}
+
+.tag:hover {
+  background: var(--accent-color);
+}
+
+.feature-card svg {
+  color: var(--accent-color);
 }

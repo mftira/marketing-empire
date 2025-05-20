@@ -3,12 +3,12 @@ layout: default
 ---
 <section class="hero">
   <div class="hero-content">
-    <h1 class="gradient-text">The Art of Luxury Living</h1>
-    <p class="hero-subtitle">Your definitive guide to premium lifestyle and exquisite tastes</p>
+    <h1 class="gradient-text">Digital Marketing Excellence</h1>
+    <p class="hero-subtitle">Your resource for strategies that drive real business growth</p>
     <div class="hero-cta">
       <div class="hero-search">
         <form id="hero-search-form" class="search-form" onsubmit="handleHeroSearch(event)">
-          <input type="text" id="hero-search-input" placeholder="Discover luxury watches, cars, fashion...">
+          <input type="text" id="hero-search-input" placeholder="Search SEO, advertising, social media...">
           <button type="submit" class="search-button">
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
               <circle cx="11" cy="11" r="8"></circle>
@@ -18,10 +18,10 @@ layout: default
         </form>
       </div>
       <div class="hero-tags">
-        <span class="tag">Timepieces</span>
-        <span class="tag">Automobiles</span>
-        <span class="tag">Fashion</span>
-        <span class="tag">Travel</span>
+        <span class="tag">SEO</span>
+        <span class="tag">Social Media</span>
+        <span class="tag">PPC</span>
+        <span class="tag">Analytics</span>
       </div>
     </div>
   </div>
@@ -29,7 +29,7 @@ layout: default
 
 
 <section class="featured-posts">
-  <h2>Featured Collections</h2>
+  <h2>Featured Strategies</h2>
   <div class="post-grid featured">
     {% for post in site.posts limit:3 %}
       <article class="post-card featured">
@@ -51,7 +51,7 @@ layout: default
           </div>
           <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
           <p>{{ post.excerpt | strip_html | truncate: 120 }}</p>
-          <a href="{{ post.url | relative_url }}" class="read-more">View Collection →</a>
+          <a href="{{ post.url | relative_url }}" class="read-more">Read Strategy →</a>
         </div>
       </article>
     {% endfor %}
@@ -60,7 +60,7 @@ layout: default
 
 
 <section class="posts-grid">
-  <h1>Latest in Luxury</h1>
+  <h1>Latest Marketing Insights</h1>
   <div class="post-grid">
     {% for post in site.posts limit:10 %}
       <article class="post-card">
@@ -81,7 +81,7 @@ layout: default
           {% endif %}
         </div>
         <p>{{ post.excerpt | strip_html | truncate: 160 }}</p>
-        <a href="{{ post.url | relative_url }}" class="read-more">Discover More →</a>
+        <a href="{{ post.url | relative_url }}" class="read-more">Learn More →</a>
       </article>
     {% endfor %}
   </div>

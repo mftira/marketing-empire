@@ -18,15 +18,15 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Prestige Empire
+title: Marketing Empire
 email: emperialcoder@gmail.com
 description: >-
-  Prestige Empire is your definitive guide to luxury living, featuring exclusive insights on high-end watches, vehicles, 
-  fashion, and premium experiences for the discerning connoisseur.
+  Marketing Empire is your ultimate resource for digital marketing strategies, featuring expert insights on SEO, social media, 
+  content marketing, advertising, and growth hacking techniques for modern businesses.
 baseurl: ""   # leave empty for root domain
-url: "https://prestigeempire.website"
-twitter_username: prestige_empire
-github_username:  prestige-empire
+url: "https://marketingempire.website"
+twitter_username: marketing_empire
+github_username:  marketing-empire
 
 # Build settings
 #theme: minima
